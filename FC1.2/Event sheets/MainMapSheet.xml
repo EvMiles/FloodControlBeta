@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMapSheet</name>
+    <events>
+        <event-block sid="239726297756106">
+            <conditions />
+            <actions>
+                <action id="-2" name="Go to layout" sid="458283835943062" type="System">
+                    <param id="0" name="Layout">AMS_Talk1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="775341687358282">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="292651091224286" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_MapIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="418322308512388" type="System">
+                    <param id="0" name="Which">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="462993957562868">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="358058855815766" type="Mouse">
+                    <param id="0" name="Object">AMS_CityIcon</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="388332566328935" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="491912490867898" type="AMS_CityIcon">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OfficeSheet</name>
+    <events>
+        <variable constant="0" name="mailReceived" sid="495043504359554" static="0" type="number">0</variable>
+        <variable constant="0" name="officeStatus" sid="256048454597069" static="0" type="number">0</variable>
+        <event-block sid="795918851732940">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="280495136056542" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="985919755833476" type="GEN_Texts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="888449015803295" type="GEN_TextBox">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="894391289285794" type="OFF_gotMail">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="247338212818439" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="435233214325566" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="778634420501928" type="GEN_UseIcon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959908497548798">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="743796873951652" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_UseIcon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="183823355411258" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="713451240612142" type="GEN_UseIcon">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="933655948052648" type="GEN_TextBox">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="279362656891270" type="GEN_Texts">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="651069067585141" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Set text" sid="861277605884744" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hello, this is ... Who am I talking to?&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="407909837978890" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="670014632103171">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="573765368783717" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_TextBox</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="773326432511120" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="364135710825030" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hello ..., my name is Jens!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="192579697906930" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="180576388108875" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="569605595079644">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="151822842524241" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_TextBox</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="820962908910681" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="418047927945858" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;I call you because there is be a disatrous hurricane building up that could hit south Holland.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="866119306753574" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="114629158721218" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287076626265668">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="193859227305716" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_TextBox</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="930133532554426" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="498358198705913" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;I sent you an e-mail with all the information.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="205150383401819" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="997349314542245" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="105996594783377">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="114566195884215" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_TextBox</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="287129172477890" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="584742002525697" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Please read it as soon as possible.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="266955477024410" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="149769102462207" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="976412446419861">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="208836545647143" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_TextBox</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="947170362985920" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="396528454163793" type="GEN_Texts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="283887018824316" type="GEN_TextBox">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="555358543128970" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="657905665317198" type="System">
+                    <param id="0" name="Variable">mailReceived</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="146267227249890" type="OFF_gotMail">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="570817093582199" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="989320224965139" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="301753313035081">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="382119128689689" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OFF_Screen_w</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="224216567576991" type="System">
+                    <param id="0" name="Variable">mailReceived</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="953886637895423" type="System">
+                    <param id="0" name="Layout">DesktopMail</param>
+                </action>
+                <action id="-9" name="Destroy" sid="173484040796182" type="OFF_gotMail" />
+                <action id="-9" name="Set value" sid="108033316535556" type="System">
+                    <param id="0" name="Variable">mailReceived</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="418979254112787">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="361116672213110" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="575210979563732" type="OFF_Mail">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="466906420924601" type="GEN_UseIcon">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="627221948639495" type="OFF_Printer_e">
+                    <param id="0" name="Animation">&quot;print&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="446496903280028" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-3" name="Set position" sid="962557771592115" type="OFF_Printer_f">
+                    <param id="0" name="X">634.521</param>
+                    <param id="1" name="Y">326.132</param>
+                </action>
+                <action id="-9" name="Set value" sid="593529476581447" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853720392658138">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="678927144865260" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OFF_Printer_f</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="692183880301392" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="575706501648983" type="OFF_Printer_f">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="298408026122256" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-3" name="Set position" sid="768956054738265" type="GEN_UseIcon">
+                    <param id="0" name="X">650</param>
+                    <param id="1" name="Y">150</param>
+                </action>
+                <action id="-9" name="Set value" sid="653049342426503" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620670289508574">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="934348868316590" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_UseIcon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="758950732868890" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="609068157855414" type="GEN_TextBox">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="763222267606363" type="GEN_Texts">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="461195084332560" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Continue at Evan&apos;s Laptop&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="590556886764674" type="System">
+                    <param id="0" name="Layout">MainMap</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="361148884150973">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="266631035920806" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OFF_Picture</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="437725792845202" type="GEN_TextBox">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="523090907980625" type="GEN_Texts">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="969793254299556" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;That&apos;s my wife. She a real hottie.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="449748254494026" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="125085607738048" type="GEN_Texts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="613741383324309" type="GEN_TextBox">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="635013162498736" type="OFF_Picture" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

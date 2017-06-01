@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>AMS_MapSheet</name>
+    <events>
+        <event-block sid="553638082078149">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="689250312821217" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AMS_CityIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="551114501831682" type="System">
+                    <param id="0" name="Layout">AMS_Talk1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="272522136463622">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="476109582589476" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AMS_MediaIcon</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="680098924021113">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="310172460236243" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AMS_GovIcon</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="161294424232371">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="617306750095842" type="Mouse">
+                    <param id="0" name="Object">AMS_GovIcon</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="525410276621344" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="968298496298448" type="AMS_GovIcon">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="961104998174525">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="868265450268753" type="Mouse">
+                    <param id="0" name="Object">AMS_CityIcon</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="118715805359317" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="180606799168083" type="AMS_CityIcon">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="598113819257066">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="664802597046926" type="Mouse">
+                    <param id="0" name="Object">AMS_MediaIcon</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="991507612097002" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="144562890939166" type="AMS_MediaIcon">
+                    <param id="0" name="&apos;On&apos; time">0.25</param>
+                    <param id="1" name="&apos;Off&apos; time">0.25</param>
+                    <param id="2" name="Duration">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

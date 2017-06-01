@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DesktopSheet</name>
+    <events>
+        <variable constant="0" name="download" sid="342059316436878" static="0" type="number">0</variable>
+        <variable constant="0" name="desktopStatus" sid="915446050641043" static="0" type="number">0</variable>
+        <event-block sid="958994172569192">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="497448994352176" type="System">
+                    <param id="0" name="Variable">desktopStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="270207024040365" type="OFF_Mail">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="719537624263532" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="192286933446851" type="GEN_UseIcon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="850987558306570" type="System">
+                    <param id="0" name="Variable">desktopStatus</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="753162884802553">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="708909091010880" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_UseIcon</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="241515075417007" type="System">
+                    <param id="0" name="Variable">desktopStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="764375923174060" type="System">
+                    <param id="0" name="Variable">officeStatus</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-3" name="Set position" sid="663559947807400" type="GEN_UseIcon">
+                    <param id="0" name="X">-100</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="501536561888816" type="System">
+                    <param id="0" name="Layout">Office</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

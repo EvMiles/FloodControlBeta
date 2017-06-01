@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Office</layout>
+        <layout order="2">DesktopMail</layout>
+        <layout order="4">MainMap</layout>
+        <layout order="6">AMS_Map</layout>
+        <layout active="1" order="8">AMS_Talk1</layout>
+        <layout order="10">AMS_Rally</layout>
+        <layout order="11">AMS_Talk2</layout>
+        <layout order="12">MainMenu</layout>
+        <event-sheet order="1">OfficeSheet</event-sheet>
+        <event-sheet order="3">DesktopSheet</event-sheet>
+        <event-sheet order="5">MainMapSheet</event-sheet>
+        <event-sheet order="7">AMS_MapSheet</event-sheet>
+        <event-sheet order="9">AMS_Talk1Sheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/GEN_MapIcon/" />
+        <folder expanded="1" path="animation-folder/AMS_Event1/" />
+        <folder expanded="1" path="animation-folder/gLock2/" />
+        <folder expanded="1" path="animation-folder/gLock3/" />
+        <folder expanded="1" path="animation-folder/Start/" />
+        <folder expanded="1" path="animation-folder/DESK_windows/" />
+        <folder expanded="1" path="animation-folder/MAP_Map/" />
+        <folder expanded="1" path="animation-folder/GOV_govman/" />
+        <folder expanded="1" path="animation-folder/AMS_Event2/" />
+        <folder expanded="1" path="animation-folder/AMS_Event3/" />
+        <folder expanded="1" path="animation-folder/OFF_office2/" />
+        <folder expanded="1" path="animation-folder/GOV_govBuilding/" />
+        <folder expanded="1" path="animation-folder/Rectangle/" />
+        <folder expanded="1" path="animation-folder/AMS_citizen/" />
+        <folder expanded="1" path="animation-folder/AMS_citizen2/" />
+        <folder expanded="1" path="animation-folder/AMS_citycenter_protest/" />
+        <folder expanded="1" path="animation-folder/AMS_citycenter/" />
+        <folder expanded="1" path="animation-folder/AMS_citycenter_protest2/" />
+        <folder expanded="1" path="animation-folder/AMS_citycenter2/" />
+        <folder expanded="1" path="animation-folder/Rectangle2/" />
+        <folder expanded="1" path="animation-folder/GEN_TextBox/" />
+        <folder expanded="1" path="animation-folder/OFF_Printer_e/" />
+        <folder expanded="1" path="animation-folder/OFF_Screen_w/" />
+        <folder expanded="1" path="animation-folder/OFF_Phone/" />
+        <folder expanded="1" path="animation-folder/OFF_Phone/New folder/" />
+        <folder expanded="1" path="animation-folder/OFF_Keys/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/OFF_Screen1/" />
+        <folder expanded="1" path="animation-folder/OFF_gotMail/" />
+        <folder expanded="1" path="animation-folder/OFF_Printer_f/" />
+        <folder expanded="1" path="animation-folder/OFF_Mail/" />
+        <folder expanded="1" path="animation-folder/GEN_UseIcon/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/OFF_Picture/" />
+        <folder expanded="1" path="animation-folder/OFF_Background/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/AMS_MediaIcon/" />
+        <folder expanded="1" path="animation-folder/AMS_GovIcon/" />
+        <folder expanded="1" path="animation-folder/AMS_CityIcon/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/GEN_OptionBar/" />
+    </folders-expanded>
+</c2uistate>

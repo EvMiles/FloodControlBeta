@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>AMS_Talk1Sheet</name>
+    <events>
+        <variable constant="0" name="backAMS" sid="910185622805416" static="0" type="number">0</variable>
+        <variable constant="0" name="talkOneStatus" sid="953997883662798" static="0" type="number">0</variable>
+        <variable constant="0" name="dialogueStart" sid="666420671722617" static="0" type="number">0</variable>
+        <variable constant="0" name="event1start" sid="363142871885247" static="0" type="number">0</variable>
+        <variable constant="0" name="event1status" sid="752724457196468" static="0" type="number">1</variable>
+        <variable constant="0" name="event2status" sid="725422722171800" static="0" type="number">1</variable>
+        <variable constant="0" name="event3status" sid="150101380833886" static="0" type="number">1</variable>
+        <event-block sid="757919641201404">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="179063246762570" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="683696799375154" type="GOV_govman">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="499102190434143" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="298366751478174" type="GEN_TextBox">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="769517281412909" type="GEN_Texts">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="222203188035198" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Welcome, please take a seat.&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="204444168401131" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="553002405027684" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="628269627541724">
+            <conditions>
+                <condition id="0" name="On click" sid="901197057333517" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="481103611015368" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="436931469858950" type="GEN_Texts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="631875180434841" type="GEN_Questions">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="829950162849127" type="GEN_Questions">
+                    <param id="0" name="Text">&quot;Hello Sir, I don&apos;t want to take much of your time so I&apos;ll cut to the chase:&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="695934938858317" type="GEN_Choice1">
+                    <param id="0" name="Text">&quot;The flood control system is in danger.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="520825033710861" type="GEN_Choice2">
+                    <param id="0" name="Text">&quot;We need extra funding!&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="214781570744463" type="GEN_Choice3">
+                    <param id="0" name="Text">&quot;We must prepare for the worst.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="347820348440021" type="GEN_Choice4">
+                    <param id="0" name="Text">&quot;Please take a look at these documents.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="615839182763684" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="811075912763405" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="110071074906753">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="416644372411198" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="290898144987045" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="181756905948539" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="290185495490970" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm...I see, we must truly do something!&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="564911619199550" type="GEN_Texts">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="172351332318540" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="742710961947580" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="618392613487278">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="490456566577428" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="271335374211360" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="282660747776758" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="800227559922502" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Sir, I understand the situation but it is not that easy&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="317431250111303" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="619335535623708" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Our budget is limited. The tax money is meant for these situations&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="783974556192934" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="676872723639767" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517382457013993">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="468078345023383" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="485805288891393" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="873595874374355" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="355499164861665" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Calm down, Sir! I am sure there is something we can do.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="523561962927750" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="318467393129530" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399725176017188">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="486334312405005" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="431889868852151" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="701490399034276" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="135331731166666" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm... that sure looks alarming. How do you plan to solve the problem?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="337865503979042" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="686393086599399" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442765272614158">
+            <conditions>
+                <condition id="0" name="On click" sid="536512536659488" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="802313586405724" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="278140654293288" type="GEN_Texts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="804799553568439" type="GEN_Questions">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="127846151761568" type="GEN_Questions">
+                    <param id="0" name="Text">&quot;After looking at the safety protocols and the research I suggest:&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="363762654370297" type="GEN_Choice1">
+                    <param id="0" name="Text">&quot;We should contact the media.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="181481068874710" type="GEN_Choice2">
+                    <param id="0" name="Text">&quot;We should go to the city and talk to the people.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="956415697619051" type="GEN_Choice3">
+                    <param id="0" name="Text">&quot;I insist, we need more government funding!&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="926078542075245" type="GEN_Choice4">
+                    <param id="0" name="Text">&quot;We all need to run for our lives!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="389422309560850" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="146647209675034" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="500706061859734">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="525844668425851" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="337857820191062" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="806088017416261" type="R21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="659796475178006" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="136159849271393" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm... that sure looks alarming. How do you plan to solve the problem?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="408904171189702" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="642294387571829" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181730356421742">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="856726695201685" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="256313785486580" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="212281615169926" type="R22">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="995883106503115" type="System">
+                    <param id="0" name="Variable">backAMS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="166825638167567" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="163203171192638" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm... that sure looks alarming. How do you plan to solve the problem?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="532937141874884" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="223336216325166" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="743398327592163">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="691427187735553" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="589029281713249" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="501162725039144" type="R23">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="782755994886200" type="System">
+                    <param id="0" name="Variable">backAMS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="872224455474611" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="800386263501602" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm... that sure looks alarming. How do you plan to solve the problem?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="790750169803621" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="167748472665090" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829124181890584">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="615549330489553" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_Choice4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="332587759075165" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="285151156674277" type="R24">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="708935343099384" type="GEN_MapIcon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="638768596145898" type="System">
+                    <param id="0" name="Variable">backAMS</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="194119682529269" type="GEN_Questions">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="406546293045667" type="GEN_Texts">
+                    <param id="0" name="Text">&quot;Hmm... that sure looks alarming. How do you plan to solve the problem?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="406871095846657" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="463008457359435" type="System">
+                    <param id="0" name="Variable">talkOneStatus</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="446901273266254">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="365134912627964" type="GEN_Choice1" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="836353944389927" type="GEN_OptionBar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228718088297862">
+            <conditions>
+                <condition id="-22" name="Else" sid="227821161970718" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="808691323226530" type="GEN_OptionBar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="796703646168163">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="565015097803593" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_MapIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="753516108968140" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="697496736971681">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="553928541648415" type="GEN_Questions" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="199602560135258" type="GEN_Choice1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="723261851495196" type="GEN_Choice2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="491925820412991" type="GEN_Choice3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="416277847265374" type="GEN_Choice4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="267464615303061">
+            <conditions>
+                <condition id="-22" name="Else" sid="166409491824720" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="378051449407029" type="GEN_Choice1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="363764856923621" type="GEN_Choice2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="739620996990003" type="GEN_Choice3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="804172575269900" type="GEN_Choice4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

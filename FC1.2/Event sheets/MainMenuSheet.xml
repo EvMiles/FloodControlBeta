@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenuSheet</name>
+    <events>
+        <variable constant="0" name="playerName" sid="527119093484408" static="0" type="text"></variable>
+        <event-block sid="428641697898419">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="513628009588276" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="823375241338876" type="System">
+                    <param id="0" name="Layout">Office</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

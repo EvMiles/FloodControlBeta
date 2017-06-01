@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>AMS_Talk2Sheet</name>
+    <events>
+        <variable constant="0" name="CivChoice1" sid="129843110525947" static="0" type="number">0</variable>
+        <variable constant="0" name="CivChoice2" sid="817164657819307" static="0" type="number">0</variable>
+        <variable constant="0" name="civ2" sid="303304284850326" static="0" type="number">0</variable>
+        <variable constant="0" name="backButton" sid="758285290453763" static="0" type="number">0</variable>
+        <variable constant="0" name="civ1" sid="752817276986064" static="0" type="number">0</variable>
+        <event-block sid="942875294665398">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="181401285363650" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AMS_citizen</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="900960621796659" type="AMS_citizen2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="758357163515780" type="AMS_citizen">
+                    <param id="0" name="Width">356</param>
+                    <param id="1" name="Height">534</param>
+                </action>
+                <action id="-3" name="Set position" sid="355117216633700" type="AMS_citizen">
+                    <param id="0" name="X">184</param>
+                    <param id="1" name="Y">216</param>
+                </action>
+                <action id="-9" name="Set value" sid="926353277469266" type="System">
+                    <param id="0" name="Variable">backButton</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="854549979860428" type="System">
+                    <param id="0" name="Variable">civ1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="692025891038297" type="AMS_citycenter2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="719934421839050">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="735471994327084" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_MapIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="215656933778375" type="System">
+                    <param id="0" name="Layout">MainMap</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="766160465674305">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="823116695991466" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AMS_citizen2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="339233251294614" type="AMS_citizen">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="433705185302121" type="AMS_citizen2">
+                    <param id="0" name="Width">-306</param>
+                    <param id="1" name="Height">435</param>
+                </action>
+                <action id="-3" name="Set position" sid="205732739888182" type="AMS_citizen2">
+                    <param id="0" name="X">686</param>
+                    <param id="1" name="Y">262</param>
+                </action>
+                <action id="-9" name="Set value" sid="404482765546133" type="System">
+                    <param id="0" name="Variable">civ2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="486370559645228" type="System">
+                    <param id="0" name="Variable">civ2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="896228598162236" type="AMS_citycenter2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266927900867354">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="531179019618686" type="System">
+                    <param id="0" name="Variable">civ1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="273804775285538" type="System">
+                    <param id="0" name="Variable">civ1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="284371467525543" type="P21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="104169785147520" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="726381089227272" type="Civ21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="556703032453397" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="732218562107987" type="Civ21">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="845804025933389" type="P21">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="757635412961954" type="P22">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="919778546907244" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="618530189857066" type="Civ22">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="632511077245389" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="961793486153331" type="Civ22">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="249987372161366" type="P22">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="400183768001347" type="P23">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="603185488584028" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+                <action id="-15" name="Set visible" sid="275042298434633" type="Civ23">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="649938745034697" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+                <action id="-15" name="Set visible" sid="363702106931564" type="Civ23">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="539742015669682" type="P23">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="205387535913638" type="P24">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="255457383456192" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="933383536325535" type="Civ24">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="650022164870543" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="612867609342441" type="Civ24">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="686465548478685" type="P24">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="207774258592145" type="P25">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="669433036397403" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="327544343657057" type="Civ25">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="718351120552727" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="903964123058800" type="Civ25">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="724286611963831" type="P25">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="860752433514499" type="P26">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="963177063990226" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="745251894883623" type="Civ26">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="414959207800040" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="650920344071150" type="Civ26">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="193567958419815" type="P26">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="819884398837810" type="P27">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="269148977636605" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="357985488990743" type="Civ27">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="811206645111606" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="988354094628286" type="Civ27">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="158285353229888" type="P27">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="658485290368649" type="P28">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="780579466266870" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="133779571304013" type="Civ28">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="229673252268575" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="300083989174257" type="Civ28">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="927175240809937" type="Civ201">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="975334303315666" type="Civ202">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="488127924149944" type="Civ203">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="964895376251529" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158153804943425">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="651259010733249" type="System">
+                    <param id="0" name="Variable">civ2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="545723383234460" type="System">
+                    <param id="0" name="Variable">civ2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="861240959329148" type="P11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="475291915315015" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="630063872770012" type="Civ11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="983852531478966" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-15" name="Set visible" sid="709242086891205" type="Civ11">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="819492413084938" type="P11">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="352315076189264" type="P12">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="353668351519483" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="542078999247695" type="Civ12">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="378927604897788" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="416913303943722" type="Civ12">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="100165749073257" type="P12">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="552415393521757" type="P13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="993033961482589" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="889956005714951" type="Civ13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="128944453134064" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="755809002406498" type="Civ13">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="985454384962139" type="P13">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="573632603175235" type="P14">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="488401053717055" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="642695204304308" type="Civ14">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="529480339861321" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="442696433088342" type="Civ14">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="742288760258814" type="P14">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="394145089446716" type="P15">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="349897531337990" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="490064004918835" type="Civ15">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="767445606274347" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="216223612455142" type="Civ15">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="904752034126737" type="P15">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="141437101540260" type="P16">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="460402726853758" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="279893091644340" type="P16">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="555526778958144" type="CivO1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="770816548380878" type="CivO2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="480279660921600" type="CivO3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="668171021771280" type="CivO4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="813012255494882" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="175426260767449">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="198098041354248" type="Keyboard">
+                    <param id="0" name="Key">49 (1)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="892199195846192" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="260599627491586" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="306602417577054" type="CivO2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="236555729189180" type="CivO3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="641048932455556" type="CivO4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="155592542461206" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="259741323718617" type="CivO1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="361273787776769" type="PFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="793371886420701" type="CivFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="838956269186511" type="System">
+                    <param id="0" name="Layout">AMS_Talk2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="229085175678647">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="437671051030103" type="Keyboard">
+                    <param id="0" name="Key">50 (2)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="132552093149336" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="583392553246328" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="472301003257200" type="CivO1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="441355369317190" type="CivO3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="509379176887732" type="CivO4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="938428936467979" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="170685008343351" type="CivO2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="924688553411025" type="PFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="417739802781339" type="CivFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="151999139442815" type="System">
+                    <param id="0" name="Layout">AMS_Talk2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921063895981626">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="649894413904305" type="Keyboard">
+                    <param id="0" name="Key">51 (3)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="978087495360401" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="909063592130412" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="565021555432823" type="CivO1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="560117601042412" type="CivO2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="273671491522162" type="CivO4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="407315046517579" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="905391600378383" type="CivO3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="699788735466466" type="PFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="373477695294501" type="CivFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="763827299730445" type="System">
+                    <param id="0" name="Layout">AMS_Talk2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986819568302040">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="885534350718140" type="Keyboard">
+                    <param id="0" name="Key">52 (4)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="454507187548905" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="676074407765922" type="System">
+                    <param id="0" name="Variable">CivChoice1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="888276176386434" type="CivO1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="518680108565097" type="CivO2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="505140242996911" type="CivO3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="375260644685476" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="576974466456040" type="CivO4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="284636886813423" type="PFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="124156463844751" type="CivFinal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="477834562766285" type="System">
+                    <param id="0" name="Layout">AMS_Talk2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="883526463560398">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="917134927435304" type="Keyboard">
+                    <param id="0" name="Key">49 (1)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="930969267139286" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="554573424750652" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="961845743552394" type="Civ202">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="405023424273857" type="Civ203">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="450393362480709" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="630096598357766" type="Civ201">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="617855807310090" type="P28">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="645723300186742" type="P2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="543047706091410" type="Civ2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359512523009730">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="654106518227850" type="Keyboard">
+                    <param id="0" name="Key">50 (2)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="609815170537890" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="723421092816238" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="977409060536929" type="Civ201">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="918657245170383" type="Civ203">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="530327191918375" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="252374614886160" type="Civ202">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="271190723877870" type="P28">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="871148070729877" type="P2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="869663295048157" type="Civ2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995259499080618">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="311699832864267" type="Keyboard">
+                    <param id="0" name="Key">51 (3)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="950646936763204" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="711787659190896" type="System">
+                    <param id="0" name="Variable">CivChoice2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="733611527628968" type="Civ201">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="805641811955009" type="Civ202">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="382038243999030" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="912919456957437" type="Civ203">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="706982053217398" type="P28">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="960757226055840" type="P2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="299642724573140" type="Civ2Final">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

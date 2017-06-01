@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Flood Control</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3dekazxq8sue</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Mouse" sid="386976952796159">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="875951865192157">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="GEN_MapIcon" sid="968937072974943">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="state" sid="543818314999294" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442917581655136" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Icons\Map.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.104" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.907692" y="0.096" />
+                            <point x="0.923077" y="0.496" />
+                            <point x="0.907692" y="0.904" />
+                            <point x="0.5" y="0.936" />
+                            <point x="0.1" y="0.896" />
+                            <point x="0.0846154" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_Event1" sid="900645714707412">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="state" sid="348810410339901" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225196553626841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\locked.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.104" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.907692" y="0.096" />
+                            <point x="0.923077" y="0.496" />
+                            <point x="0.907692" y="0.904" />
+                            <point x="0.5" y="0.936" />
+                            <point x="0.1" y="0.896" />
+                            <point x="0.0846154" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\complete.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\incomplete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gLock2" sid="373668495620059">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409038053102933" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\locked.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.104" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.907692" y="0.096" />
+                            <point x="0.923077" y="0.496" />
+                            <point x="0.907692" y="0.904" />
+                            <point x="0.5" y="0.936" />
+                            <point x="0.1" y="0.896" />
+                            <point x="0.0846154" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\complete.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\incomplete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gLock3" sid="101025904645079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565499752796422" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\locked.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.104" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.907692" y="0.096" />
+                            <point x="0.923077" y="0.496" />
+                            <point x="0.907692" y="0.904" />
+                            <point x="0.5" y="0.936" />
+                            <point x="0.1" y="0.896" />
+                            <point x="0.0846154" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\complete.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\incomplete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="738242139090800">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="397581280794818">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="510734032811776">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="617504206699795">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Start" sid="168757165413282">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846146117218361" speed="5">
+                    <frame duration="1" hotspotX="0.500982" hotspotY="0.502959" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\Start.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GEN_Texts" sid="481326855982377">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DESK_windows" sid="999646619399747">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550501011744419" speed="5">
+                    <frame duration="1" hotspotX="0.500375" hotspotY="0.500549" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\MailScreen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MAP_Map" sid="834859559590692">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572696321652535" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500422" original-source="C:\Users\Evan Miles\Downloads\Map.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GOV_govman" sid="497619197203119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462396578610884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\govman.png">
+                        <collision-poly>
+                            <point x="0.31875" y="0.2125" />
+                            <point x="0.5" y="0.165" />
+                            <point x="0.59875" y="0.2675" />
+                            <point x="0.60875" y="0.5" />
+                            <point x="0.6725" y="0.781667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.135" y="0.91" />
+                            <point x="0.1975" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="R21" sid="482539895983896">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="R22" sid="202575661896759">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="R23" sid="406002163203096">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="R24" sid="520651604038710">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AMS_Event2" sid="394918129035012">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="state" sid="762109002464907" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="624301201004965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\incomplete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_Event3" sid="197141168065495">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="state" sid="901678684878516" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609729761337212" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\incomplete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_office2" sid="620819591785311">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938539290874742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\office.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GOV_govBuilding" sid="563723097048435">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147568974698348" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\gov building.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rectangle" sid="515857738241596">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565098730103045" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\Rectangle 1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MediaText1" sid="622732907431666">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText2" sid="232103196055295">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText3" sid="810437053536294">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText4" sid="168489518029586">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText5" sid="642973560410046">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText6" sid="672177448004088">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MediaText7" sid="769162646218032">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AMS_citizen" sid="146870619976269">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="888609460168988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citizen-01.png">
+                        <collision-poly>
+                            <point x="0.32625" y="0.2175" />
+                            <point x="0.5" y="0.1725" />
+                            <point x="0.5875" y="0.275" />
+                            <point x="0.62125" y="0.5" />
+                            <point x="0.68375" y="0.789167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.12875" y="0.914167" />
+                            <point x="0.1525" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_citizen2" sid="122563876818152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326337188047406" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citizen-02.png">
+                        <collision-poly>
+                            <point x="0.32" y="0.213333" />
+                            <point x="0.5" y="0.1525" />
+                            <point x="0.59875" y="0.2675" />
+                            <point x="0.66875" y="0.779167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.16375" y="0.890833" />
+                            <point x="0.17875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Civ11" sid="457768745265014">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P11" sid="551104220837242">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P12" sid="603376833497026">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P13" sid="919514197877578">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P14" sid="198909533701429">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P15" sid="954323620385990">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P16" sid="283316452975130">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P17" sid="691705195743436">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ12" sid="998584854771935">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ13" sid="327101346659952">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ14" sid="691857168327995">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ15" sid="670471873973499">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CivO1" sid="972334341732046">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CivO2" sid="763806837182576">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CivO3" sid="286050019040230">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CivO4" sid="759817164641728">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PFinal" sid="831768819060719">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CivFinal" sid="578589763582074">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ21" sid="631813826072595">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ22" sid="159922298905390">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ23" sid="208296619243728">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ24" sid="788282647676052">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ25" sid="582293768813851">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ26" sid="960980077921407">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ27" sid="361894479623299">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ28" sid="406024749539404">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P21" sid="878877362588094">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P22" sid="635018161917272">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P23" sid="268109325117841">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P24" sid="163361540125299">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P25" sid="945098392441933">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P26" sid="969117001372256">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P27" sid="301514812173386">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P28" sid="672336326183191">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ201" sid="398443176823637">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ202" sid="641651060883647">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ203" sid="449480228437649">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="P2Final" sid="455421677278724">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civ2Final" sid="957788373863267">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AMS_citycenter_protest" sid="202610462640316">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677618009449718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citycenter_protest.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_citycenter" sid="700146389249263">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159755756800921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citycenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_citycenter_protest2" sid="628641785379424">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142583431062906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citycenter_protest.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_citycenter2" sid="728892319243180">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696966109422363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Downloads\citycenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rectangle2" sid="290480445894377">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414497283736920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Evan Miles\Pictures\Flood Control Graphics\Rectangle 1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GEN_TextBox" sid="644022166176199">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162668871641403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Henrik\Desktop\TextBox.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Printer_e" sid="291329387752201">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843804050612443" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Henrik\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\Construct\Flood Control\Office\Printer_e.png">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="18" loop="0" name="Print" pingpong="0" repeatcount="1" repeatto="0" sid="513646733403384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Screen_w" sid="417779633000187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="267781466381201" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Henrik\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\Construct\Flood Control\Office\Screen_w.png">
+                        <collision-poly>
+                            <point x="0.094" y="0.094" />
+                            <point x="0.906" y="0.094" />
+                            <point x="0.996" y="0.5" />
+                            <point x="0.804" y="0.804" />
+                            <point x="0.5" y="0.975" />
+                            <point x="0.196" y="0.804" />
+                            <point x="0.004" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Phone" sid="556810382514663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation-folder name="New folder" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761057861005951" speed="5">
+                    <frame duration="1" hotspotX="0.453333" hotspotY="0.526" original-source="C:\Users\Henrik\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\Construct\Flood Control\Office\Phone.png">
+                        <collision-poly>
+                            <point x="0.205" y="0.246" />
+                            <point x="0.7875" y="0.255" />
+                            <point x="0.945833" y="0.5" />
+                            <point x="0.818333" y="0.782" />
+                            <point x="0.5" y="0.862" />
+                            <point x="0.115" y="0.862" />
+                            <point x="0.135" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Keys" sid="196064359755317">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770035546399881" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Henrik\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\Construct\Flood Control\Office\Keys.png">
+                        <collision-poly>
+                            <point x="0.365" y="0.365" />
+                            <point x="0.5" y="0.07" />
+                            <point x="0.785" y="0.215" />
+                            <point x="0.76" y="0.5" />
+                            <point x="0.89" y="0.89" />
+                            <point x="0.5" y="0.49" />
+                            <point x="0.52" y="0.48" />
+                            <point x="0.145" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="511841868343667">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="909616555848158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Screen1" sid="235688809137692">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285177634243557" speed="5">
+                    <frame duration="1" hotspotX="0.50042" hotspotY="0.500684" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\PC1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_gotMail" sid="958371595813022">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443559578255433" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Downloads\Copy of mail-icon.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Printer_f" sid="943067689359568">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428373694952738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Assets\Office\Printer_f.png">
+                        <collision-poly>
+                            <point x="0.227" y="0.227" />
+                            <point x="0.5" y="0.037" />
+                            <point x="0.773" y="0.227" />
+                            <point x="0.89" y="0.5" />
+                            <point x="0.803" y="0.803" />
+                            <point x="0.5" y="0.931" />
+                            <point x="0.197" y="0.803" />
+                            <point x="0.082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Mail" sid="439392639975469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745326091621483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\Mail.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UserName" sid="452964709133175">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable name="playerName" sid="938460608180185" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="GEN_UseIcon" sid="744608960701756">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598979569004655" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 4\Project\hand-icon.png">
+                        <collision-poly>
+                            <point x="0.196" y="0.196" />
+                            <point x="0.5" y="0.042" />
+                            <point x="0.904" y="0.096" />
+                            <point x="0.904" y="0.5" />
+                            <point x="0.832" y="0.832" />
+                            <point x="0.5" y="0.96" />
+                            <point x="0.138" y="0.862" />
+                            <point x="0.138" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="334665237292342">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724707265634380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Picture" sid="288048484036086">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671142312093306" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OFF_Background" sid="471465337424963">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982870523098427" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Google Drive\Game Lab #1-2 Water Management\Art\office empty.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="450711503327944">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837789779809636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Icons\Map.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.06" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.932" y="0.068" />
+                            <point x="0.914" y="0.914" />
+                            <point x="0.128" y="0.872" />
+                            <point x="0.06" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_MediaIcon" sid="617014157272646">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="144476469806249">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="739696511140638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Icons\Media_w.png">
+                        <collision-poly>
+                            <point x="0.116" y="0.116" />
+                            <point x="0.88" y="0.12" />
+                            <point x="0.952" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.156" y="0.844" />
+                            <point x="0.032" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_GovIcon" sid="665185328075564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="895246050810655">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923659457264240" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Icons\parliament_w.png">
+                        <collision-poly>
+                            <point x="0.29" y="0.29" />
+                            <point x="0.5" y="0.198" />
+                            <point x="0.708" y="0.292" />
+                            <point x="0.92" y="0.92" />
+                            <point x="0.5" y="0.934" />
+                            <point x="0.078" y="0.922" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AMS_CityIcon" sid="807440003124578">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="944204124485692">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120526842282996" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Icons\City Center_t.png">
+                        <collision-poly>
+                            <point x="0.322" y="0.322" />
+                            <point x="0.5" y="0.014" />
+                            <point x="0.718" y="0.282" />
+                            <point x="0.978" y="0.5" />
+                            <point x="0.786" y="0.786" />
+                            <point x="0.5" y="0.946" />
+                            <point x="0.214" y="0.786" />
+                            <point x="0.012" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="422855975571549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808740419079486" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jimmy\Dropbox\Uni Stuff\Hanze\Year 2\Block 3\Project\Assets\TV.png">
+                        <collision-poly>
+                            <point x="0.11" y="0.11" />
+                            <point x="0.89" y="0.11" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.724" y="0.724" />
+                            <point x="0.5" y="0.798" />
+                            <point x="0.276" y="0.724" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text5" sid="200297821654547">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GEN_Questions" sid="540257644123314">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GEN_Choice1" sid="293512863729234">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="468993028151591">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>GEN_Choice1</type>
+                <type>GEN_Choice2</type>
+                <type>GEN_Choice3</type>
+                <type>GEN_Choice4</type>
+            </container>
+        </object-type>
+        <object-type name="SpriteFont" sid="972386498909298">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont2" sid="728771013208796">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="GEN_OptionBar" sid="566398810849131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854593658444566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.34375" y="0" />
+                            <point x="0.65625" y="0" />
+                            <point x="0.65625" y="1" />
+                            <point x="0.34375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GEN_Choice2" sid="290802481878141">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="111845005564243">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>GEN_Choice1</type>
+                <type>GEN_Choice2</type>
+                <type>GEN_Choice3</type>
+                <type>GEN_Choice4</type>
+            </container>
+        </object-type>
+        <object-type name="GEN_Choice3" sid="921701660554768">
+            <plugin id="Text" />
+            <container>
+                <type>GEN_Choice1</type>
+                <type>GEN_Choice2</type>
+                <type>GEN_Choice3</type>
+                <type>GEN_Choice4</type>
+            </container>
+        </object-type>
+        <object-type name="GEN_Choice4" sid="647130724771740">
+            <plugin id="Text" />
+            <container>
+                <type>GEN_Choice1</type>
+                <type>GEN_Choice2</type>
+                <type>GEN_Choice3</type>
+                <type>GEN_Choice4</type>
+            </container>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>MainMenu.xml</layout>
+        <layout>Office.xml</layout>
+        <layout>DesktopMail.xml</layout>
+        <layout>MainMap.xml</layout>
+        <layout>AMS_Map.xml</layout>
+        <layout>AMS_Talk1.xml</layout>
+        <layout>AMS_Talk2.xml</layout>
+        <layout>AMS_Rally.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>MainMapSheet.xml</event-sheet>
+        <event-sheet>AMS_Talk1Sheet.xml</event-sheet>
+        <event-sheet>MainMenuSheet.xml</event-sheet>
+        <event-sheet>OfficeSheet.xml</event-sheet>
+        <event-sheet>DesktopSheet.xml</event-sheet>
+        <event-sheet>AMS_RallySheet.xml</event-sheet>
+        <event-sheet>AMS_Talk2Sheet.xml</event-sheet>
+        <event-sheet>AMS_MapSheet.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Keyboard" uid="2" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>AMS_RallySheet</name>
+    <events>
+        <event-block sid="474594258530525">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="862923666053182" type="System">
+                    <param id="0" name="Variable">event2status</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="806111041869110" type="System">
+                    <param id="0" name="Variable">event2status</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="783835018432043" type="GEN_MapIcon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="981939522325199" type="MediaText1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="823084163415585" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="225705843145386" type="MediaText1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="716458567536643" type="MediaText2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="920779216256944" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+                <action id="-15" name="Set visible" sid="564759855307354" type="MediaText2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="296575546209598" type="MediaText3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="844096997760177" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+                <action id="-15" name="Set visible" sid="236497986579997" type="MediaText3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="507720592195770" type="MediaText4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="984144373409621" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+                <action id="-15" name="Set visible" sid="315959351309517" type="MediaText4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="495171772352130" type="MediaText5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="571913628226546" type="System">
+                    <param id="0" name="Seconds">11</param>
+                </action>
+                <action id="-15" name="Set visible" sid="726501576219855" type="MediaText5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="480458656707809" type="MediaText6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="833919922963808" type="System">
+                    <param id="0" name="Seconds">11</param>
+                </action>
+                <action id="-15" name="Set visible" sid="345353169993134" type="MediaText6">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="793700900402241" type="MediaText7">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="940812337519966" type="System">
+                    <param id="0" name="Seconds">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959017684086683">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="328729733317940" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GEN_MapIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="913226698128208" type="System">
+                    <param id="0" name="Layout">MainMap</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
